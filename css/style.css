@@ -1,3 +1,5 @@
+
+
 /* reset valores predeterminados */
 
 *{
@@ -49,7 +51,19 @@ main span {
 header nav ul li a{
     text-decoration: none;
     color: black;
+    align-items: center;
 }
+
+/* un hover */
+.navbar-nav .nav-link {
+    transition: all 0.3s ease-in-out; 
+  }
+  
+  .navbar-nav .nav-link:hover {
+    /* Aumentar el tamaño de los links  */
+    transform: scale(1.1); 
+    background-color: #f8f9fa; 
+  }
 
 .copete {
     width:100%;
@@ -153,3 +167,32 @@ footer {
         padding: 5px;
         text-align: center;
       }
+
+@media (max-width: 767px) {
+        /* Estilos CSS para pantallas más pequeñas */
+
+.opiniones {
+    text-align: center;
+    height: auto;
+    /* overflow:scroll; */
+    width: 150px;  
+    flex: 150px;
+
+    }
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        padding: 1em 8em;
+        /* gap: 10%; */
+        
+    
+    }
+/* 
+@media (min-width: 768px) {
+        /* Estilos CSS para pantallas más grandes 
+    } 
+ */
+
+ 
